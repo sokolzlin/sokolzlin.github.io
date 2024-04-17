@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kliknutím na obrázek pokračujte</title>
+    <style>
+        @font-face {
+            font-family: SokolTyrs;
+            src: url('SokolTyrs-Regular.ttf');
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 99vh;
+            margin: 0;
+            font-family: SokolTyrs, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .text {
+            color: #E40521;
+            font-size: 4em;
+            margin: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: 80vh;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://example.com">
+
+            <div class="text">Kliknutím na obrázek pokračujte</div>
+            <div class="image-container">
+                <img src="image.png" alt="Klikni zde">
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
